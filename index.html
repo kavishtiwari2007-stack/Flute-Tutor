@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BASURI - Indian Classical Flute Tutor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">BASURI</div>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#technique">Technique</a></li>
+            <li><a href="#swaras">Swaras</a></li>
+            <li><a href="#alankars">Alankars</a></li>
+            <li><a href="#raags">Raags</a></li>
+        </ul>
+    </nav>
+
+    <header id="hero" class="hero">
+        <div class="hero-content">
+            <h1>Discover the Bansuri</h1>
+            <p>Master the soul-stirring melodies of Indian Classical Music</p>
+            <a href="#technique" class="btn">Begin Journey</a>
+        </div>
+    </header>
+
+    <section id="technique" class="section glass-panel">
+        <h2 class="section-title">Fundamental Techniques</h2>
+        <div class="technique-grid">
+            <div class="technique-card">
+                <div class="img-container">
+                    <img src="assets/holding_flute.png" alt="Holding the Bansuri">
+                </div>
+                <h3>How to Hold</h3>
+                <p>Use the pads of your fingers, not the tips. The left hand covers the top three holes, while the right hand covers the bottom three. Keep your wrists relaxed.</p>
+            </div>
+            <div class="technique-card">
+                <div class="img-container">
+                    <img src="assets/blowing_flute.png" alt="Blowing Technique">
+                </div>
+                <h3>Embouchure (Blowing)</h3>
+                <p>Rest the blowing hole against your lower lip. Shape your lips as if saying "pooh" and blow a steady, focused stream of air across the opposite edge of the hole.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="swaras" class="section">
+        <h2 class="section-title">The Seven Swaras (Notes)</h2>
+        <p class="section-subtitle">Click on a Swara to see its finger position on the Bansuri.</p>
+        
+        <div class="swara-container">
+            <div class="swara-buttons">
+                <button class="swara-btn active" data-swara="sa">Sa (S)</button>
+                <button class="swara-btn" data-swara="re">Re (R)</button>
+                <button class="swara-btn" data-swara="ga">Ga (G)</button>
+                <button class="swara-btn" data-swara="ma">Ma (M)</button>
+                <button class="swara-btn" data-swara="pa">Pa (P)</button>
+                <button class="swara-btn" data-swara="dha">Dha (D)</button>
+                <button class="swara-btn" data-swara="ni">Ni (N)</button>
+            </div>
+
+            <div class="flute-diagram">
+                <div class="flute-body">
+                    <!-- Embouchure hole -->
+                    <div class="hole embouchure"></div>
+                    <!-- Six playing holes -->
+                    <div class="hole play-hole" id="hole-1"></div>
+                    <div class="hole play-hole" id="hole-2"></div>
+                    <div class="hole play-hole" id="hole-3"></div>
+                    <div class="hole play-hole spacer" id="hole-4"></div>
+                    <div class="hole play-hole" id="hole-5"></div>
+                    <div class="hole play-hole" id="hole-6"></div>
+                </div>
+                <div class="swara-description" id="swara-info">
+                    <h3>Sa (Shadja)</h3>
+                    <p>All three top holes closed. The fundamental note.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="alankars" class="section glass-panel dark-glass">
+        <h2 class="section-title text-gold">Alankars & Exercises</h2>
+        <p class="section-subtitle text-light">Patterns to develop finger dexterity and breath control.</p>
+        
+        <div class="alankar-list">
+            <div class="alankar-item">
+                <h3>1. Basic Ascent & Descent</h3>
+                <p><strong>Aroha:</strong> S R G M P D N S'</p>
+                <p><strong>Avaroha:</strong> S' N D P M G R S</p>
+            </div>
+            <div class="alankar-item">
+                <h3>2. Double Notes (Jod)</h3>
+                <p><strong>Aroha:</strong> SS RR GG MM PP DD NN S'S'</p>
+                <p><strong>Avaroha:</strong> S'S' NN DD PP MM GG RR SS</p>
+            </div>
+            <div class="alankar-item">
+                <h3>3. Triplets (Khand)</h3>
+                <p><strong>Aroha:</strong> SRG RGM GMP MPD PDN DNS'</p>
+                <p><strong>Avaroha:</strong> S'ND NDP DPM PMG MGR GRS</p>
+            </div>
+            <div class="alankar-item">
+                <h3>Techniques</h3>
+                <ul class="tech-list">
+                    <li><strong>Meend (Glissando):</strong> Slowly sliding the finger off the hole to bend the pitch.</li>
+                    <li><strong>Khatka/Murki:</strong> Quick grace notes played rapidly around a principal note.</li>
+                    <li><strong>Gamak:</strong> Heavy oscillation adding weight and emotion to the Swara.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="raags" class="section">
+        <h2 class="section-title">Explore Raags</h2>
+        
+        <div class="level-tabs">
+            <button class="tab-btn active" data-level="beginner">Beginner</button>
+            <button class="tab-btn" data-level="intermediate">Intermediate</button>
+            <button class="tab-btn" data-level="pro">Pro Level</button>
+        </div>
+
+        <div class="raag-content" id="raag-container">
+            <!-- Populated by JS -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 BASURI. A journey into Indian Classical Music.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
